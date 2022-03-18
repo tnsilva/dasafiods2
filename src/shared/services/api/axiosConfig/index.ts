@@ -4,7 +4,7 @@ import { responseInterceptor, errorInterceptor } from "../interceptors";
 import { Environment } from "../../../environment";
 
 const api = axios.create({
-  baseURL: Environment.URL_BASE,
+  baseURL: process.env.URL_BASE_APP,
   headers: {
     "Content-Type": "application/json",
   
